@@ -1,12 +1,11 @@
-# ams
-1.	Client Details:
+# Apartment Management System
+Client Details:
 Client name: Shriram Srishti Apartments Association  
-          Details: Apartment community association with 144 houses (etsd 2004).
-          Apartment manager Mr.Belliappa, the representative of this association.
-          Phone: +919632596898
-          Location: Bangalore, Karnataka
+Details: Apartment community association with 144 houses (etsd 2004).
+Apartment manager Mr.Belliappa, the representative of this association.
+Location: Bangalore, Karnataka
 
-      2.	List of all Functional modules:
+List of all Functional modules:
 1.	Maintaining basic details for apartments.
 2.	Calculating maintenance fee for every apartment.
 3.	Keeping a check on the payment of the maintenance fee.
@@ -15,28 +14,3 @@ Client name: Shriram Srishti Apartments Association
 6.	Staff/ Maid id card details. 
 7.	Booking parking slots. 
 8.	Excel database for apartment details.
-
-
-
-
-3. Acceptance Tests – From client end:
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
