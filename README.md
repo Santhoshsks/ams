@@ -57,7 +57,7 @@ Location: Bangalore, Karnataka
 ## Example Application
 This is a screenshot of the application's main interface:
 
-![Main Interface](https://github.com/santhoshsks/ams/screenshots/main.png)
+![Main Interface](https://github.com/Santhoshsks/ams/blob/1d9ad284ce673904f945c4348a72546738db3c0b/screenshots/main.png)
 
 ## References:
 Basics: https://realpython.com/python-gui-tkinter/ \
