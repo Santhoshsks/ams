@@ -30,7 +30,7 @@ Sends payment reminders.
 User Authentication:
 Ensures secure access.
 
-Benefits:
+## Benefits:
 Efficiency: Eliminates manual record-keeping.\
 Transparency: Residents access and verify occupancy and maintenance info.\
 Convenience: Handles new occupancies and payments online.\
