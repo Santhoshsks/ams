@@ -55,7 +55,7 @@ Location: Bangalore, Karnataka
 8.	Excel database for apartment details. 
 
 ## Example Application
-This is a screenshot of the application's main interface:
+Screenshots:
 
 ![Main Interface](https://github.com/Santhoshsks/ams/blob/1d9ad284ce673904f945c4348a72546738db3c0b/screenshots/main.png) \
 ![Data Base Look](https://github.com/Santhoshsks/ams/blob/088027e9367f8930996119f520b800881af8e1a5/screenshots/database.png) \
