@@ -54,6 +54,10 @@ Location: Bangalore, Karnataka
 7.	Booking parking slots. 
 8.	Excel database for apartment details. 
 
+## Example Application
+This is a screenshot of the application's main interface:
+
+![Main Interface](https://github.com/santhoshsks/ams/screenshots/main_interface.png)
 
 ## References:
 Basics: https://realpython.com/python-gui-tkinter/ \
