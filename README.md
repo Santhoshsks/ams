@@ -62,9 +62,5 @@ Screenshots:
 ![Admin Options](https://github.com/Santhoshsks/ams/blob/cd346ce79ec709d74de2216286dfaaecff2f45d6/screenshots/admin_options.png) \
 ![User Options](https://github.com/Santhoshsks/ams/blob/dd46ba0e45b1ea11a4a89f0f1d56d8df59732248/screenshots/user_options.png) 
 
-## References:
-Basics: https://realpython.com/python-gui-tkinter/ \
-AST: https://stackoverflow.com/questions/15197673/using-pythons-eval-vs-ast-literal-eval \
-Time: https://stackoverflow.com/questions/620305/convert-year-month-day-to-day-of-year-in-python \
-Window: https://www.tutorialspoint.com/python-geometry-method-in-tkinter
+
 
