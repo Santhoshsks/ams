@@ -1,46 +1,48 @@
 from tkinter import *
-from PIL import ImageTk,Image
+from PIL import ImageTk, Image
 import user_login
 import admin_login
 
-def home():
-    w=Toplevel()
-    w.geometry('1366x768')
-    w.title('Home')
-    w.resizable(0, 0)
+def home(w, wi, he):
     bg_frame = Image.open('./images/home1.png')
+    bg_frame = bg_frame.resize((wi, he), Image.Resampling.LANCZOS)
     photo = ImageTk.PhotoImage(bg_frame)
+    w.photo = photo  
     bg_panel = Label(w, image=photo)
-    bg_panel.image = photo
-    bg_panel.place(width=1366,height=768)
+    bg_panel.place(width=wi, height=he)
 
     def Admin():
-        w.destroy()
-        admin_login.admin_loginf() 
+        w.withdraw()
+        admin_window = Toplevel(w)
+        admin_window.geometry(f"{wi}x{he}")
+        admin_login.admin_loginf(admin_window, wi, he)
 
     def User():
-        w.destroy()
-        user_login.user_loginf()
-    
-    admin = Button(w, text='ADMIN', font=("gotham",15,"bold"), width=15, bd=0,
-                            bg='white', cursor='hand2', fg='black',command=Admin)
-    admin.place(relx=0.30,rely=0.553)
+        w.withdraw()
+        user_window = Toplevel(w)
+        user_window.geometry(f"{wi}x{he}")
+        user_login.user_loginf(user_window, wi, he)
 
-    user = Button(w, text='USER', font=("gotham",15,"bold"), width=15, bd=0,
-                            bg='white', cursor='hand2', fg='black',command=User)
-    user.place(relx=0.550,rely=0.554)
+    admin = Button(w, text='ADMIN', font=("gotham", 15, "bold"), width=15, bd=0,
+                   bg='white', cursor='hand2', fg='black', command=Admin)
+    admin.place(relx=0.31, rely=0.57)
 
-    if __name__ == '__main__':
-        w1=Toplevel()
-        wi, he = w1.winfo_screenwidth(), w1.winfo_screenheight()
-        w1.geometry("%dx%d+0+0" % (wi, he))
-        w1.title('Home')
-        w1.mainloop()
-    w.mainloop()        
-    
+    user = Button(w, text='USER', font=("gotham", 15, "bold"), width=15, bd=0,
+                  bg='white', cursor='hand2', fg='black', command=User)
+    user.place(relx=0.56, rely=0.57)
+
+    w.mainloop()
+
 if __name__ == '__main__':
     root = Tk()
-    root.overrideredirect(1)
+    wi, he = root.winfo_screenwidth(), root.winfo_screenheight()
+    root.geometry(f'{wi}x{he}')
+    root.title('Home')
+
+    top_window = Toplevel(root)
+    top_window.geometry(f"{wi}x{he}+0+0")
+    top_window.title('Home')
+
     root.withdraw()
-    home()
-    
+
+    home(top_window, wi, he)
